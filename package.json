@@ -1,0 +1,52 @@
+{
+  "name": "quark-dict",
+  "version": "1.0.0",
+  "description": "a quick shell dict",
+  "main": "index.js",
+  "module": "lib/module/index",
+  "source": "index",
+  "keywords": [
+    "dict",
+    "geek"
+  ],
+  "repository": "https://github.com/Makcy/quark-dict",
+  "homepage": "https://github.com/Makcy/quark-dict#readme",
+  "bugs": {
+    "url": "https://github.com/Makcy/quark-dict/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "license": "MIT",
+  "directories": {
+    "src": "src",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "xx": "./bin/cli"
+  },
+  "author": "Makcy (https://github.com/Makcy)",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "cli-spinners": "^1.0.0",
+    "commander": "^2.11.0",
+    "ora": "^1.3.0",
+    "request": "^2.82.0",
+    "urlencode": "^1.1.0"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": false
+    }
+  }
+}
